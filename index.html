@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aura brillante | Salón & Estudio Botánico</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  
+  <!-- Material Symbols -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <!-- Barra de Anuncio Superior -->
+  <aside class="announcement-bar">
+    <div class="container announcement-content">
+      <div class="announcement-info">
+        <span class="material-symbols-outlined icon-sm">spa</span>
+        <span>Santuario Botánico· </span>
+      </div>
+      <div class="announcement-details">
+        <span class="desktop-only">Cuidado holístico, tinturas 100% orgánicas y bienestar consciente</span>
+        <div class="phone-wrapper">
+          <span class="material-symbols-outlined icon-sm">phone_in_talk</span>
+          <span>+**********</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navegación Principal -->
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="#inicio" class="brand-logo" aria-label="Aura y Seda, ir al inicio">
+        <div class="logo-icon">
+          <span class="material-symbols-outlined">eco</span>
+        </div>
+        <div class="brand-text">
+          <h1>Aura Brillante</h1>
+          <p>Salón & Estudio Botánico</p>
+        </div>
+      </a>
+
+      <nav id="site-navigation" class="nav-links" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#tratamientos">Tratamientos</a>
+        <a href="#ritual-insignia">Ritual insignia</a>
+        <a href="#galeria">Experiencias</a>
+        <a href="#comunidad">Comunidad</a>
+        <a href="#contacto">Visítanos</a>
+        <a class="mobile-booking-link" href="#booking">Reservar cita</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#booking" class="btn btn-primary">
+          <span>Reservar Cita</span>
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </a>
+      </div>
+      <button type="button" class="nav-toggle" aria-controls="site-navigation" aria-expanded="false" aria-label="Abrir menú">
+        <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Sección Hero -->
+  <section id="inicio" class="hero-section">
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge badge-botanical">
+          <span class="material-symbols-outlined icon-xs">temp_preferences_custom</span>
+          <span>Santuario de Belleza Holística</span>
+        </div>
+        
+        <h2 class="hero-title">
+          Belleza Consciente, <br/>
+          <span class="italic">Cuidado Natural.</span>
+        </h2>
+        
+        <p class="hero-description">
+          Un refugio sensorial donde el arte botánico y las técnicas capilares conscientes devuelven el equilibrio orgánico a tu piel y cabello. Sin químicos abrasivos, con el ritmo que tu cuerpo merece.
+        </p>
+        
+        <div class="hero-buttons">
+          <a href="#tratamientos" class="btn btn-primary">Ver Carta de Servicios</a>
+        </div>
+      </div>
+
+      <div class="hero-visuals">
+        <div class="hero-card-main">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Spa botánico"/>
+          <div class="hero-card-overlay"></div>
+          <div class="hero-card-caption">
+            <span class="caption-tag">Ritual Facial Seda</span>
+            <span class="caption-title">Armonía & Luminosidad</span>
+          </div>
+        </div>
+        
+        <div class="hero-card-side">
+          <div class="side-img-box">
+            <img src="https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=600&q=80" alt="Cuidado capilar"/>
+          </div>
+          <div class="side-quote-box">
+            <div class="quote-header">
+              <span class="material-symbols-outlined">filter_vintage</span>
+              <div class="stars">
+                <span class="material-symbols-outlined icon-xs">star</span>
+                <span class="material-symbols-outlined icon-xs">star</span>
+                <span class="material-symbols-outlined icon-xs">star</span>
+                <span class="material-symbols-outlined icon-xs">star</span>
+                <span class="material-symbols-outlined icon-xs">star</span>
+              </div>
+            </div>
+            <p class="quote-text">"El salón más consciente y sanador de Medellín. Mi cabello recuperó su vitalidad real."</p>
+            <span class="quote-author">— Valentina O.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra de Reservas Flotante -->
+    <div class="container">
+      <div id="booking" class="booking-bar">
+        <form id="booking-form" class="booking-form-grid">
+          <div class="form-group">
+            <label>
+              <span class="material-symbols-outlined icon-sm text-primary">spa</span> Experiencia
+            </label>
+            <select id="service-select">
+              <option>Ritual aura brillante Completo</option>
+              <option>Cabello: Color Botánico Puro</option>
+              <option>Facial Bio-Activo Glow</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label>
+              <span class="material-symbols-outlined icon-sm text-secondary">person_outline</span> Especialista
+            </label>
+            <select id="specialist-select">
+              <option>Cualquiera Disponible</option>
+              <option>Laura Restrepo</option>
+              <option>Camila Duque</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label>
+              <span class="material-symbols-outlined icon-sm text-primary">calendar_month</span> Fecha
+            </label>
+            <input id="date-input" type="date" value="2026-11-20"/>
+          </div>
+          
+          <div class="form-action">
+            <button type="submit" class="btn btn-primary w-full">
+              <span class="material-symbols-outlined icon-sm">check_circle</span>
+              <span>Agendar Cita</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Tratamientos -->
+  <section id="tratamientos" class="services-section">
+    <div class="container">
+      <header class="section-header">
+        <div>
+          <span class="section-subtitle">Menú Botánico Integral</span>
+          <h2 class="section-title">Nuestras Experiencias & Tratamientos</h2>
+        </div>
+        <p class="section-description">
+          Protocolos diseñados para nutrir a nivel celular mediante aceites esenciales prensados en frío y extractos silvestres.
+        </p>
+      </header>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Color botánico"/>
+            <span class="service-tag">100% Sin Amoniaco</span>
+          </div>
+          <div class="service-body">
+            <h3>Cabello & Color Botánico</h3>
+            <p>Tinturas con pigmentos herbales de nogal y henna pura, balayage consciente que preserva la hebra.</p>
+            <div class="service-footer">
+              <div>
+                <span class="price-label">Desde</span>
+                <span class="price-value">C$*******</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article id="rituales-faciales" class="service-card">
+          <div class="service-img-wrapper">
+            <img src="https://nuestratierracosmetica.com/cdn/shop/files/gel-conductor-bio-activo-7950662_800x.png?v=1776710119" alt="Facial bioactivo"/>
+            <span class="service-tag highlight">Glow Inmediato</span>
+          </div>
+          <div class="service-body">
+            <h3>Faciales Bio-activos</h3>
+            <p>Limpieza profunda ultrasónica, drenaje linfático con cuarzos de rosa y mascarillas de espirulina.</p>
+            <div class="service-footer">
+              <div>
+                <span class="price-label">Desde</span>
+                <span class="price-value">C$*******</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80" alt="Masajes"/>
+            <span class="service-tag">Equilibrio Nervioso</span>
+          </div>
+          <div class="service-body">
+            <h3>Masajes Holísticos</h3>
+            <p>Aromaterapia personalizada con aceites de sándalo, masaje craneal hindú Champi y maderoterapia.</p>
+            <div class="service-footer">
+              <div>
+                <span class="price-label">Desde</span>
+                <span class="price-value">C$*******</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- Sección Experiencia Insignia -->
+<section id="ritual-insignia" class="signature-section">
+  <!-- Resplandores ambientales de fondo -->
+  <div class="signature-glow glow-left"></div>
+  <div class="signature-glow glow-right"></div>
+
+  <div class="container signature-grid">
+    <!-- Columna Izquierda: Información del Ritual -->
+    <div class="signature-info">
+      <div class="badge badge-signature">
+        <span class="material-symbols-outlined icon-xs">auto_awesome</span>
+        <span>EXPERIENCIA INSIGNIA DE AUTOR</span>
+      </div>
+
+      <h2 class="signature-title">
+        Ritual Aura & Seda: <br />
+        <span class="italic">Reconecta con tu brillo natural.</span>
+      </h2>
+
+      <p class="signature-description">
+        Una inmersión de 120 minutos creada para desacelerar la mente y revitalizar cuerpo, cabello y piel en sincronía perfecta.
+      </p>
+
+      <!-- Pasos del Ritual -->
+      <ol class="ritual-steps">
+        <li class="step-item">
+          <span class="step-number">1</span>
+          <div class="step-content">
+            <h3>Bienvenida Herbolaria & Infusión Calmante</h3>
+            <p>Té de cedrón recolectado a mano, toalla caliente con agua de azahar y escaneo de intención consciente.</p>
+          </div>
+        </li>
+
+        <li class="step-item">
+          <span class="step-number">2</span>
+          <div class="step-content">
+            <h3>Terapia Capilar Ayurvédica Shirodhara</h3>
+            <p>Flujo tibio de aceites orgánicos sobre el cuero cabelludo, masaje de puntos marma y vaporización botánica profunda.</p>
+          </div>
+        </li>
+
+        <li class="step-item">
+          <span class="step-number">3</span>
+          <div class="step-content">
+            <h3>Renovación Facial con Cuarzos & Seda Líquida</h3>
+            <p>Mascarilla oclusiva de péptidos botánicos, drenaje ocular frío y sellado con sérum de caléndula.</p>
+          </div>
+        </li>
+      </ol>
+
+      <!-- Acción principal -->
+      <div class="signature-action">
+        <a href="#booking" class="btn btn-terracotta">
+          Reservar Ritual Insignia (120 min · $320.000 COP)
+        </a>
+        <span class="action-note">Cupos limitados por día para preservar el silencio.</span>
+      </div>
+    </div>
+
+    <!-- Columna Derecha: Tarjeta Visual y Reproductor -->
+    <div class="signature-media">
+      <div class="media-card">
+        <div class="media-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80" alt="Experiencia Shirodhara" />
+          <div class="media-tag">
+            <span class="status-dot"></span>
+            <span>EN VIVO EN CABINA</span>
+          </div>
+        </div>
+
+        <!-- Reproductor de Audio -->
+        <div class="audio-player">
+          <div class="player-header">
+            <div class="player-info">
+              <div class="player-icon">
+                <span class="material-symbols-outlined">music_note</span>
+              </div>
+              <div>
+                <span class="track-title">Playlist: 'Tardes de Seda & Lino'</span>
+                <span class="track-subtitle">Frecuencias 432Hz · Spotify Curated</span>
+              </div>
+            </div>
+            <button type="button" id="play-btn" class="player-toggle-btn" aria-label="Reproducir música">
+              <span class="material-symbols-outlined" id="play-icon">play_arrow</span>
+            </button>
+          </div>
+
+          <!-- Barra de progreso -->
+          <div class="progress-bar-container">
+            <div class="progress-bar-fill" id="progress-fill"></div>
+          </div>
+          <div class="progress-timestamps">
+            <span id="current-time">02:14</span>
+            <span>05:30</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Sección Transformaciones & Testimonios -->
+<section id="galeria" class="testimonials-section">
+  <div class="container">
+    <!-- Encabezado de Sección -->
+    <div class="testimonials-header">
+      <div>
+        <span class="section-subtitle">RESULTADOS AUTÉNTICOS</span>
+        <h2 class="section-title">Transformaciones & Testimonios</h2>
+      </div>
+      <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn-instagram">
+        <span class="material-symbols-outlined icon-sm">photo_camera</span>
+        <span>Síguenos en Instagram @aura.seda</span>
+      </a>
+    </div>
+
+    <!-- Tarjetas de Testimonios -->
+    <div class="testimonials-grid">
+      <!-- Testimonio 1 -->
+      <article class="testimonial-card">
+        <div class="card-content">
+          <div class="stars-rating">
+            <span class="material-symbols-outlined icon-sm">star</span>
+            <span class="material-symbols-outlined icon-sm">star</span>
+            <span class="material-symbols-outlined icon-sm">star</span>
+            <span class="material-symbols-outlined icon-sm">star</span>
+            <span class="material-symbols-outlined icon-sm">star</span>
+          </div>
+          <p class="quote-body">
+            "Llevaba años buscando un salón en Medellín que no oliera a químicos fuertes. Mi balayage quedó con una luz increíble y mi cuero cabelludo no sufrió ninguna irritación. Es paz total."
+          </p>
+        </div>
+        <div class="author-info">
+          <div class="avatar avatar-peach">MC</div>
+          <div>
+            <h3 class="author-name">Mariana Correa</h3>
+            <span class="author-treatment">Balayage Botánico & Glow Facial</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Testimonio 2 -->
+      <article class="testimonial-card">
+        <div class="card-content">
+          <div class="stars-rating">
+            <span class="material-symbols-outlined icon-sm">star</span>
+            <span class="material-symbols-outlined icon-sm">star</span>
+            <span class="material-symbols-outlined icon-sm">star</span>
+            <span class="material-symbols-outlined icon-sm">star</span>
+            <span class="material-symbols-outlined icon-sm">star</span>
+          </div>
+          <p class="quote-body">
+            "El Ritual Aura & Seda es un reinicio absoluto. El té, la aromaterapia y el masaje shirodhara me quitaron la tensión de meses de trabajo. Volveré cada mes sin duda alguna."
+          </p>
+        </div>
+        <div class="author-info">
+          <div class="avatar avatar-mint">AM</div>
+          <div>
+            <h3 class="author-name">Alejandra Morales</h3>
+            <span class="author-treatment">Ritual Insignia 120 Min</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Testimonio 3 -->
+      <article class="testimonial-card">
+        <div class="card-content">
+          <div class="stars-rating">
+            <span class="material-symbols-outlined icon-sm">star</span>
+            <span class="material-symbols-outlined icon-sm">star</span>
+            <span class="material-symbols-outlined icon-sm">star</span>
+            <span class="material-symbols-outlined icon-sm">star</span>
+            <span class="material-symbols-outlined icon-sm">star</span>
+          </div>
+          <p class="quote-body">
+            "El diagnóstico facial gratuito me abrió los ojos sobre la barrera de mi piel. El protocolo que me diseñó Camila transformó por completo la textura en solo 3 semanas."
+          </p>
+        </div>
+        <div class="author-info">
+          <div class="avatar avatar-orange">SG</div>
+          <div>
+            <h3 class="author-name">Sara Gómez</h3>
+            <span class="author-treatment">Facial Bio-Activo Detox</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Mosaico / Galería de Instagram (4 Imágenes) -->
+    <div class="instagram-gallery">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Ondas de cabello botánico" />
+        <div class="gallery-overlay">
+          <span class="material-symbols-outlined">favorite</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80" alt="Hierbas y boticario" />
+        <div class="gallery-overlay">
+          <span class="material-symbols-outlined">favorite</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80" alt="Masaje compresas herbales" />
+        <div class="gallery-overlay">
+          <span class="material-symbols-outlined">favorite</span>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80" alt="Cuidado de uñas pastel" />
+        <div class="gallery-overlay">
+          <span class="material-symbols-outlined">favorite</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Sección Comunidad / Newsletter -->
+<section id="comunidad" class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-card">
+      <!-- Resplandores orgánicos de fondo -->
+      <div class="newsletter-glow glow-top-left"></div>
+      <div class="newsletter-glow glow-bottom-right"></div>
+
+      <div class="newsletter-content">
+        <!-- Ícono superior -->
+        <div class="community-icon font-icon">
+          <span class="material-symbols-outlined">local_florist</span>
+        </div>
+
+        <!-- Subtítulo y Título -->
+        <span class="community-subtitle">CÍRCULO DE BIENESTAR AURA</span>
+        <h2 class="community-title">Haz Parte de Nuestra Comunidad</h2>
+
+        <!-- Descripción -->
+        <p class="community-description">
+          Recibe cartas botánicas quincenales sobre cuidado consciente, acceso preferencial a nuevos rituales y un <strong>10% de descuento de cortesía</strong> en tu primera visita a nuestro santuario.
+        </p>
+
+        <!-- Formulario -->
+        <form id="community-form" class="community-form">
+          <input 
+            type="email" 
+            id="newsletter-email" 
+            class="input-email" 
+            placeholder="Ingresa tu correo personal..." 
+            required
+          />
+          <button type="submit" class="btn btn-community">
+            Unirme al Círculo
+          </button>
+        </form>
+
+        <!-- Leyenda de privacidad -->
+        <span class="privacy-note">
+          Respetamos tu privacidad. Jamás enviaremos contenido no deseado.
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer Principal -->
+<footer id="contacto" class="main-footer">
+  <div class="container">
+    <!-- Fila Principal de Columnas -->
+    <div class="footer-grid">
+      <!-- Columna 1: Marca & Descripción -->
+      <div class="footer-col brand-col">
+        <div class="footer-brand">
+          <div class="footer-logo-icon">
+            <span class="material-symbols-outlined">eco</span>
+          </div>
+          <span class="footer-brand-title">Aura & Seda</span>
+        </div>
+        <p class="footer-description">
+          *****************
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Sitio Web" class="social-btn">
+            <span class="material-symbols-outlined">public</span>
+          </a>
+          <a href="#" aria-label="Instagram" class="social-btn">
+            <span class="material-symbols-outlined">photo_camera</span>
+          </a>
+          <a href="#" aria-label="Chat" class="social-btn">
+            <span class="material-symbols-outlined">chat</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Columna 2: Tratamientos -->
+      <div class="footer-col">
+        <h3 class="footer-heading">Tratamientos</h3>
+        <ul class="footer-links">
+          <li><a href="#cabello">Coloración Botánica</a></li>
+          <li><a href="#cabello">Balayage Consciente</a></li>
+          <li><a href="#rituales-faciales">Faciales Bio-Activos</a></li>
+          <li><a href="#tratamientos">Manicura No-Tóxica</a></li>
+          <li><a href="#tratamientos">Shirodhara Craneal</a></li>
+          <li><a href="#tratamientos">Drenaje Linfático</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: El Estudio -->
+      <div class="footer-col">
+        <h3 class="footer-heading">El Estudio</h3>
+        <ul class="footer-links">
+          <li><a href="#filosofia">Nuestra Filosofía</a></li>
+          <li><a href="#">Ingredientes Puros</a></li>
+          <li><a href="#">Equipo de Maestras</a></li>
+          <li><a href="#">Sostenibilidad & Envases</a></li>
+          <li><a href="#">Guía Botánica Estacional</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Visítanos & Horarios -->
+      <div class="footer-col contact-col">
+        <h3 class="footer-heading">Visítanos & Horarios</h3>
+        <ul class="contact-list">
+          <li>
+            <span class="material-symbols-outlined icon-sm text-primary">location_on</span>
+            <span>***********</span>
+          </li>
+          <li>
+            <span class="material-symbols-outlined icon-sm text-primary">schedule</span>
+            <span>Lunes a Sábado: 8:00 AM – 7:00 PM (Con Cita Previa)</span>
+          </li>
+          <li>
+            <span class="material-symbols-outlined icon-sm text-primary">mail</span>
+            <span>gmail.com</span>
+          </li>
+        </ul>
+
+        <!-- Caja WhatsApp -->
+        <div class="whatsapp-card">
+          <div class="whatsapp-info">
+            <span class="whatsapp-tag">ATENCIÓN VÍA WHATSAPP</span>
+            <span class="whatsapp-number">+*********</span>
+          </div>
+          <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="whatsapp-send-btn" aria-label="Enviar WhatsApp">
+            <span class="material-symbols-outlined">send</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra Inferior de Derechos y Legales -->
+    <div class="footer-bottom">
+      <p class="copyright">
+        © 2026 criss-angel - Todos los derechos reservados.
+      </p>
+      <div class="legal-links">
+        <a href="#">Política de Privacidad</a>
+        <a href="#">Términos & Cancelaciones</a>
+        <a href="#">Guía Botánica</a>
+        <a href="#">Contacto Directo</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Botón Flotante de WhatsApp -->
+<a href="https://wa.me/ target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Asesoría inmediata por WhatsApp">
+  <span class="material-symbols-outlined">chat</span>
+  <span class="floating-tooltip">¿Te asesoramos?</span>
+</a>
+
+  <!-- Script Interactivo -->
+  <script src="js/script.js"></script>
+</body>
+</html>
